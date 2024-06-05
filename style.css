@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --starship:#F3DB4C;
+  --mine-shaft: #343434;
+  --husk: #B2A443;
+  --sycamore: #94843C;
+  --white:#fff;
+  --max-width: 1400px; 
+  --padding: 8px;
+  --margin: 10px; 
+}
+::selection{
+  background: var(--sycamore);
+}
+body{
+
+  font-family: "Montserrat", sans-serif;
+  background: var(--mine-shaft);
+  line-height:  24px;
+  font-size: 16px;
+}
+header{
+  text-align: center;
+  color: var(--starship);
+  border-bottom: solid 1px var(--sycamore);
+  margin-bottom: var(--margin);
+  
+}
+h1 , h2{
+  padding: var(--padding);
+  color: #F3DB4C;
+}
+
+section{
+  padding: var(--padding);
+}
+a{
+  color: var(--starship);
+  text-decoration: none;
+}
+p{
+  font-size: 1rem;
+  color: var(--white);
+}
+p::first-letter{
+  color: var(--starship);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+ul{
+  list-style: none;
+}
+ul.list>li.item{
+  cursor: pointer;
+  color: var(--starship)
+}
+li.item:hover a{
+  color: var(--mine-shaft)
+}
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+.card{
+  width: 350px;
+  border: solid 1px var(--sycamore);
+  margin: var(--margin) auto;
+}
+.list{
+  text-align: center;
+  padding: var(--padding);
+}
+.item{
+  border-bottom: solid 1px var(--sycamore);
+  transition: 1s;
+  font-size: 1.2rem;
+}
+.item:hover{
+  background-color: var(--sycamore);
+  color: var(--mine-shaft)
+}
+.item:last-child{
+  border: none;
+}
+ul.list>li.item a:visited{
+  color: var(--husk)
+}
+
+.bg{
+  background: var(--starship);
+}
+form{
+  padding: var(--padding);
+}
+input{
+  padding: var(--padding);
+  border: solid 0.5px var(--starship);
+  border-radius: 4px;
+  outline: none;
+}
+input[type="text"], input[type="password"]{
+  margin-bottom: var(--margin);
+  display: block;
+  width: 100%;
+}
+label{
+  color: var(--white);
+}
+input[type ="checkbox"]:checked + label {
+  color:var(--starship)
+}
+
+form{
+  background: var(--mine-shaft);
+  transition: 1s;
+}
+
+form:focus-within{
+  background: var(--sycamore);
+  color: var(--mine-shaft)
+}
+
+form:focus-within > label{
+  background: var(--sycamore);
+  color: var(--mine-shaft)
+}
+
